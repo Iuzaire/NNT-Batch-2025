@@ -1,0 +1,48 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background: #9B59B6;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.white svg {
+    fill: #fff;
+}
+
+.purple svg {
+    fill: #9B59B6;
+}
+
+.white {
+    transform: scale(1);
+}
+
+.purple {
+    transform: scale(0);
+}
+
+.frame:hover .white {
+    transform: scale(10);
+}
+
+.frame:hover .purple {
+    transform: scale(1);
+}
