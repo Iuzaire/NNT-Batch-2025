@@ -28,7 +28,7 @@ body{
 
 .progress-container::before{
   content: '';
-  background-color: #e0e0e0;
+  background-color: #838080;
   position: absolute;
   top:50%;
   left: 0;
@@ -59,7 +59,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #e0e0e0;
+  border: 3px solid #838080;
   transition: .4s ease;
  }
 
@@ -89,6 +89,6 @@ body{
  }
 
  .btn:disabled{
-  background-color: #e0e0e0;
+  background-color: #838080;
   cursor: not-allowed;
  }
