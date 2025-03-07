@@ -22,6 +22,8 @@ body{
   width: 50px;
   padding: 5px;
   outline: none;
+  font-size:16px;
+  border-radius: 25px;
 
 }
 .btn{
@@ -33,15 +35,17 @@ body{
   background-color: white;
   font-size: 15px;
   outline: none;
+  border-radius: 25px;
+
  
 }
 
 .active .input-bar {
-  width: 190px;
+  width: 200px;
 
 }
 
 .active .btn{
-  transform: translateX(80px);
+  transform: translateX(95px);
   transition: all 0.9s ease;
 }
