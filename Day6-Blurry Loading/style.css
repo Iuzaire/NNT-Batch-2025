@@ -1,0 +1,33 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.background {
+  background: url('https://plus.unsplash.com/premium_photo-1661603403807-aa68bfcc983a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BsYXNofGVufDB8fDB8fHww');
+  background-size: cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+  background-repeat: no-repeat;
+}
+
+.load-text {
+  font-size: 60px;
+  color: #e7f706;
+}
