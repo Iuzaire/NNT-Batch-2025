@@ -85,6 +85,7 @@ button {
 #btn1:hover {
   background-color: rgb(59, 56, 200);
   border: 0;
+  transform: scale(1.1);
 }
 
 #btn2:hover {
