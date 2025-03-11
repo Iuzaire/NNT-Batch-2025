@@ -64,12 +64,12 @@ h2{
 
 input{
 
-  height: 120px;
+  height: 122px;
   width: 20%;
   outline: none;
   border: 1px solid #eee;
   border-radius: 5px;
-  font-size: 70px; 
+  font-size: 73px; 
   margin: 3px;
   text-align: center;
   caret-color: transparent;
@@ -86,13 +86,14 @@ input:focus{
 .footer{
   width: 100%;
   max-width: 400px;
-  
+  margin-top: 40px;
 
 }
 
 .ftr-txt{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 40
+  px;
   padding: 10px;
   background-color: #eaeaea;  line-height: 20px;
   border-radius: 5px;
