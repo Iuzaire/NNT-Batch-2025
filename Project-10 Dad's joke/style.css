@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(223, 230, 172);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+
+  width: 450px;
+  padding: 22px;
+  border-radius: 10px;
+  text-align: center;
+   background-color: rgb(18, 105, 105);
+   color: white;
+   font-size: 15px;
+   font-family: 'Mulish', sans-serif;
+   background-color: rgb(1, 145, 145);
+
+
+}
+
+img{
+  width: 100px; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+button{
+  width: 180px;
+  height: 30px;
+  margin-top: 30px;
+  background-color: black;
+  color: yellow;
+  outline: none;
+  border: 0;
+  animation: all 1s ease;
+  border-radius: 5px;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.animate{
+  transform: scale(1.1) rotateX(10deg); /* Correct transform */
+  transition: transform 0.5s ease-in-out; /* Smooth animation */
+}
+
