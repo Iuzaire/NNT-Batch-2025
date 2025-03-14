@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (savedFeedback) {
           feedbackText.innerHTML = `Your feedback: <strong>${savedFeedback}</strong> <br><br> We'll use your feedback to improve our customer support`;
       } else {
-          feedbackText.innerHTML = "No feedback received.";
+          feedbackText.innerHTML = "No feedback received."; 
       }
   }
 });
