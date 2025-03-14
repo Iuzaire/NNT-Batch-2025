@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body{
+
+  background-color: blueviolet;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container{
+  width: 345px;
+  height: 99%;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid white;
+  margin-top: 2px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  position: relative;
+  
+}
+
+#pic{
+  width: 98%;
+  height: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 1%;
+  top: 2px;
+  border-radius:  10px 10px 0 0;
+}
+
+.footer{
+/* border: 2px solid red; */
+height: 10%;
+width: 100%;
+position: absolute;
+display: flex;
+justify-content: space-around;
+align-items: center;
+bottom: 0px;
+}
+
+svg{
+  width: 25px;
+  height: 25px;
+  color: blue;
+  fill: rgb(87, 85, 85);
+  stroke-width:5px
+
+}
+
+button{
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: 0;
+  font-size: 10px;
+  background:none;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+button:hover svg{
+  fill: blueviolet;
+    font-weight: bold;
+    stroke-width: 2; 
+}
+
+button:focus svg{
+  fill: blueviolet;
+}
+
+button:focus p{
+  color: blueviolet;
+  font-weight: bold;
+}
+
