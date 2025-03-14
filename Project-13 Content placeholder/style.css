@@ -17,7 +17,7 @@ body{
 
 .container{
 width: 350px;
-background-color: aliceblue;
+background-color: #fff;
 border-radius: 15px;
 display: flex;
 justify-content: center;
