@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: aqua;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container :nth-child(2){
+padding: 10px;
+margin: 10px;
+}
+
+.alltodos{
+  background-color: blueviolet;
+  width: 50%;
+  border: 1px solid black;
+  color: aliceblue;
+}
