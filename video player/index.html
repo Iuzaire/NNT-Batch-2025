@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header> <h1>Simple Video Player</h1></header>
+  <section>
+
+    <video src="a.mp4" id="vdo" width="100%" height="100%"></video>
+
+  </section>
+
+  <footer> 
+    
+    
+      <button id="upldBtn">Upload</button>
+    <input type="file" accept=".mp4" id="chosef" onchange="upload()">
+   
+
+    <button id="plybtn" onclick="ply()">Play</button>
+    <button id="paubtn" onclick="pau()">Pause</button>
+    
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
