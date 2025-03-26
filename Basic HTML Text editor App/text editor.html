@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <i class='far fa-file-code' style='font-size:48px;color:rgb(255, 255, 255); margin-right: 5px;'></i>
+    HTML Basic Text Editor ver 1.1</header>
+  <main>
+    <fieldset id="text-box">
+      <legend >TYPE YOUR CODE HERE
+        <i style='font-size:24px; color: rgb(0, 0, 0); margin-right: 5px;' class='fas'>&#xf121; </i>
+       
+      </legend>
+    <textarea name="" id="code">
+
+<!DOCTYPE html> 
+<html>   
+<head>  
+<title> Text Editor HTML</title>    
+</head>       
+<body>        
+ 
+
+
+
+</body> 
+</html>
+
+<!--Write your code and click run-->
+    </textarea>
+    </fieldset>
+
+  </main>
+
+  <center> <button id="run-btn" onclick="run()" >Run Code <i style='font-size:13px; color: rgb(0, 0, 0); ' class='fas'>&#xf121; </i></button></center>
+
+  <fieldset id="show">
+    <legend>OUTPUT
+      <i style="font-size:24px; margin-right: 5px;" class="fa">&#xf152;</i>
+    </legend>
+    <div id="result">
+
+    </div>
+  </fieldset>
+
+  <center> <button id="icon" onclick=" back()">Return to Code <i style="font-size:12px" class="fa">&#xf0a8;</i></button></center>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
