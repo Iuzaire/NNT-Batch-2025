@@ -8,6 +8,6 @@ console.log(images);
 
 rightBtn.addEventListener('click',()=>{
 
-
+//applying logic
   })
 
