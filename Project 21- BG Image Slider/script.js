@@ -1,13 +1,34 @@
-let leftBtn = document.getElementById('left');
 
-let rightBtn = document.getElementById('right');
+const slides = document.querySelectorAll('.slide');
+const leftBtn = document.getElementById('left');
+const rightBtn = document.getElementById('right');
+const bg = document.querySelector('.bg');
 
-let images = document.querySelectorAll(".slide");
+let currentIndex = 0;
 
-console.log(images);
+function showSlide(index) {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
 
-rightBtn.addEventListener('click',()=>{
+  // Show the current slide
+  slides[index].style.display = 'block';
 
-//applying logic
-  })
+  // Update background image
+  const imgSrc = slides[index].querySelector('img').src;
+  bg.style.backgroundImage = `url(${imgSrc})`;
+}
 
+// Initial load
+showSlide(currentIndex);
+
+// Button handlers
+rightBtn.onclick = () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+};
+
+leftBtn.onclick = () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+};
