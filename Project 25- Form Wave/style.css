@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  width: 350px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+a {
+  color: #00ffe0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00ffe0, #3f5efb);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #00ffe0;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 30px;
+  width: 100%;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-bottom-color: #00ffe0;
+  box-shadow: 0 4px 20px rgba(0, 255, 224, 0.2);
+}
+
+.form-control input:focus ~ label span,
+.form-control input:valid ~ label span {
+  color: #00ffe0;
+  transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
