@@ -1,0 +1,25 @@
+:root {
+  --degrees: 0deg;
+}
+
+.bg-conic {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent var(--degrees),
+    #f59e0b var(--degrees),
+    #f59e0b 360deg
+  );
+}
+
+.hand {
+  transform-origin: bottom center;
+  transform: rotate(var(--degrees));
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
