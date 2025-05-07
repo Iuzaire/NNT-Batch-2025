@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  padding: 2rem;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  border: 2px solid #d0d5dd;
+  border-radius: 12px;
+  color: #333;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.user-form input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.user-form input::placeholder {
+  color: #999;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  padding: 2rem;
+  margin: 0 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 5px solid #e0e7ff;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.user-info {
+  color: #111827;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.user-info h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.user-info ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.user-info ul li strong {
+  font-size: 1rem;
+  margin-left: 0.4rem;
+  color: #1f2937;
+}
+
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #6366f1;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem 0.3rem 0 0;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.repo:hover {
+  background-color: #4f46e5;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .user-info {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .user-info ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
