@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Live User Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2 class="title">User Directory</h2>
+        <p class="subtitle">Search users by name or city</p>
+        <input type="text" id="filter" placeholder="Type to search..." />
+        <p class="count"><span id="count">0</span> users found</p>
+      </header>
+
+      <ul id="result" class="user-list">
+        <li>
+          <h3>Loading users...</h3>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
